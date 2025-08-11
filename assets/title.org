@@ -1,0 +1,18 @@
+#+begin_src emacs-lisp :exports results :results none :eval export
+  (make-variable-buffer-local 'org-latex-title-command)
+  (setq org-latex-title-command (string-join
+     '("\\maketitle"
+       "\\vfill"
+       "\\begin{center}"
+       "\\emph{Commutative Rings, Fields, and Galois Theory} \\copyright 2025 by \\href{http://gmcninch.math.tufts.edu}{George McNinch}
+        is licensed under Creative Commons
+        Attribution-NonCommercial-ShareAlike 4.0 International. To view a
+        copy of this license, visit
+        \\url{https://creativecommons.org/licenses/by-nc-sa/4.0/}"
+       "\\end{center}") "\n"
+     ))
+#+end_src
+
+
+\newpage
+
