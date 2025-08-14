@@ -1,4 +1,4 @@
--- Time-stamp: <2025-03-31 Mon 09:25 EDT - george@podkayne>
+-- Time-stamp: <2025-08-14 Thu 17:41 EDT - george@valhalla>
 let Dow = < Mon | Tue | Wed | Thu | Fri | Sat | Sun >
 
 let concat = https://prelude.dhall-lang.org/List/concat
@@ -69,57 +69,54 @@ let lectures =
         { sched =
           [ ScheduleDetails.DowTufts
               { dow = Dow.Mon
-              , time = { start = "10:30", end = "11:45" }
-              , location = "JCC 280"
+              , time = { start = "09:00", end = "10:15" }
+              , location = "JCC 502"
               }
           , ScheduleDetails.DowTufts
               { dow = Dow.Wed
-              , time = { start = "10:30", end = "11:45" }
-              , location = "JCC 280"
+              , time = { start = "09:00", end = "10:15" }
+              , location = "JCC 502"
               }
           ]
         , topics = ./topics/lectures.dhall : List Text
         , description = "course lecture"
         }
 
-let FinalProject =
-      CourseComponent.Assignment
-        { description = "Final Project Due"
-        , sched =
-          [ ScheduleDetails.DateDue { date = "2025-04-13", deadline = "23:59" }
-          , ScheduleDetails.DateDue { date = "2025-05-02", deadline = "23:59" }
-          ]
-        , assignments = [ "Final project proposals due", "Final Project Due" ]
-        }
-
-let Quizzes =
+let midterm =
       CourseComponent.Exam
-        { sched =
+        { description = "Midterm"
+        , sched =
           [ ScheduleDetails.Date
-              { date = "2025-02-26"
-              , time = { start = "10:30", end = "11:45" }
-              , location = "JCC 280"
-              }
-          , ScheduleDetails.Date
-              { date = "2025-04-09"
-              , time = { start = "10:30", end = "11:45" }
-              , location = "JCC 280"
+              { date = "2025-10-22"
+              , time = { start = "09:00", end = "10:15" }
+              , location = "TBA"
               }
           ]
-        , description = "in-class quizzes (~20-30 minute)"
         }
 
-in  [ { courseAY = "AY2024-2025"
-      , courseSem = "spring"
-      , title = "Math087"
+let final-exam =
+      CourseComponent.Exam
+        { description = "Final Exam"
+        , sched =
+          [ ScheduleDetails.Date
+              { date = "2025-12-13"
+              , time = { start = "23:59", end = "" }
+              , location = "TBA"
+              }
+          ]
+        }
+
+in  [ { courseAY = "AY2025-2026"
+      , courseSem = "fall"
+      , title = "Math245"
       , sections = [ "01" ]
       , chair = "George McNinch"
       , instructors = [] : List Text
       , tas = [ "" ]
-      , courseDescription = "Mathematical Modelling"
+      , courseDescription = "Graduate Algebra I"
       , target =
-        { dir = "course-pages", base = "Math087", org = "/home/george/org/" }
-      , courseComponents = [ lectures, homework, FinalProject, Quizzes ]
+        { dir = "course-pages", base = "Math245", org = "/home/george/org/" }
+      , courseComponents = [ lectures, midterm, final-exam ]
       , courseTasks = tasks : List Task
       }
     ]
