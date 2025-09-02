@@ -1,4 +1,4 @@
--- Time-stamp: <2025-08-27 Wed 15:31 EDT - george@sortilege>
+-- Time-stamp: <2025-09-02 Tue 09:09 EDT - george@valhalla>
 let Dow = < Mon | Tue | Wed | Thu | Fri | Sat | Sun >
 
 let concat = https://prelude.dhall-lang.org/List/concat
@@ -99,8 +99,8 @@ let final-exam =
         { description = "Final Exam"
         , sched =
           [ ScheduleDetails.Date
-              { date = "2025-12-13"
-              , time = { start = "23:59", end = "" }
+              { date = "2025-12-16"
+              , time = { start = "12:00", end = "14:00" }
               , location = "TBA"
               }
           ]
