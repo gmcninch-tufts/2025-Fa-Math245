@@ -1,0 +1,70 @@
+
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{color}
+
+\title{Assignment 2}
+\author{Math245 \\ George McNinch \\ Fall 2025, Tufts University}
+\date{Due: September 15, 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Questions}
+
+\begin{enumerate}
+\item
+Let $G$ be a group, let $S_1, S_2 \subseteq G$ be subsets and let $H_i = \langle S_i \rangle$ for $i=1,2$. Suppose that $\forall x \in S_1$ and $\forall y \in S_2$ we have $xyx^{-1} \in H_2$. Prove that $H_1$ normalizes $H_2$; i.e. prove that $\forall x \in H_1, \forall y \in H_2, xyx^{-1} \in H_2$.
+
+\item
+Let $n \in \mathbb{N}$, $n > 0$ and consider the group $S = S(\mathbb{Z}/n\mathbb{Z})$ of permutations of the set $\mathbb{Z}/n\mathbb{Z}$.
+
+\begin{enumerate}
+    \item For $x \in \mathbb{Z}/n\mathbb{Z}$, recall that the additive order $o(x)$ is a divisor of $n$. Describe the \textit{cycle structure} of the element $\sigma \in S$ defined by the rule $\sigma(z) = z + x$. Show that the order of $\sigma$ is $o(x)$.
+    \item Suppose that $n = p$ is a prime number, and let $k \in \mathbb{Z}$ with $\gcd(k,p) = 1$. Thus the class $\overline{k}$ of $k$ in $\mathbb{Z}/p\mathbb{Z}$ lies in the group $(\mathbb{Z}/p\mathbb{Z})^\times$ of \textit{units}. The multiplicative order $o(\overline{k})$ of $\overline{k}$ is a divisor of $p-1$. Describe the \textit{cycle structure} of the element $\tau \in S$ defined by the rule $\tau(z) = \overline{k} \cdot z$. Show that the order of $\tau$ is $o(\overline{k})$.
+\end{enumerate}
+
+\item
+Let $G$ be the group of invertible $2 \times 2$ matrices with entries in $F = \mathbb{Z}/p\mathbb{Z}$ for a prime number $p$; the group operation is given by matrix multiplication.
+
+\begin{enumerate}
+    \item Show that $|G| = (p^2 - 1)(p^2 - p)$.
+    \item Show that $T = \{ \begin{pmatrix} t & 0 \\ 0 & s \end{pmatrix} \mid t,s \in F^\times \}$ is a subgroup of $G$. Here $F^\times$ denotes the multiplicative group of invertible elements of $F = \mathbb{Z}/p\mathbb{Z}$. Also show that $T \cong F^\times \times F^\times$.
+    \item Show that $U = \{ \begin{pmatrix} 1 & a \\ 0 & 1 \end{pmatrix} \mid a \in F \}$ is a subgroup of $G$ isomorphic to the additive group $F$.
+    \item Show that $T$ normalizes $U$. Find the order of the group $B = TU$.
+    \item A line in $F^2$ is by definition a linear subspace of dimension 1. For any non-zero vector $v$, the set $Fv = \text{Span}(v)$ is a line. Note that $G$ acts in a natural way on the set of lines in $F^2$. If we write $e = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ and $f = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$ for the standard basis of $F^2$, show that $B$ is
+
+      the stabilizer of the line $F e$.
+    \item Show that $G$ acts transitively on the set of lines in $F^2$.
+    \item Conclude that the set of lines in $F^2$ is in bijection with the set $G/B$. How many lines are there in $F^2$?
+\end{enumerate}
+
+\item
+Let $G$ be a group and let $\Omega$ be a $G$-set. If $x,y \in \Omega$ and $x = g y$ for some $g \in G$, prove that the stabilizers $G_x = \text{Stab}_G (x)$ and $G_y = \text{Stab}_G (y)$ are \textit{conjugate}. More precisely, show that $G_x = g G_y g^{-1}$.
+
+\item
+Let $G$ be a group. $G$ acts on itself by conjugation: for $g,x \in G$, the action of $g$ on $x$ is given by $Inn_g x = g x g^{-1}$.
+
+\begin{enumerate}
+    \item Prove that the assignment $g \mapsto Inn_g$ determines a group homomorphism $G \to \text{Aut}(G)$ where $\text{Aut}(G)$ is the group of automorphisms of $G$.
+    \item Let $Z = \{g \in G \mid \forall x \in G, gx = xg\}$ be the \textit{center} of $G$. Prove that $Z = \ker Inn$.
+\end{enumerate}
+
+For the action of $G$ on itself by conjugation, the stabilizer $\text{Stab}_G (x)$ of $x \in G$ is usually written $C_G (x)$ and is called the \textit{centralizer} of $x$ in $G$. Note that
+$$C_G (x) = \{y \in G \mid yxy^{-1} = x\} = \{y \in G \mid yx = xy\}.$$
+
+\item
+Let $I = I_n$ be a finite set with $n$ elements, and let $S = S_n = S(I_n)$ be the group of permutations of $I$. Recall that $|S| = n!$.
+
+\begin{enumerate}
+    \item Prove that there are $(n-1)!$ $n$-cycles in $S$. \textit{Hint}: If the elements of $I$ are written $I = \{a_1, a_2, \ldots, a_n\}$, then the $n$-cycles $(a_1, a_2, \ldots, a_n)$ and $(a_2, a_3, \ldots, a_n, a_1)$ are \textit{equal}.
+    \item Prove that if $\sigma$ is an $n$-cycle in $S$, then $C_S (\sigma) = \langle \sigma \rangle$.
+\end{enumerate}
+\end{enumerate}
+
+\end{document}

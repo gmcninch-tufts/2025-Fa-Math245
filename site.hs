@@ -35,6 +35,8 @@ main = hakyllWith config $ do
 
     match ("course-content/*ipynb"
            .||. "course-content/*pdf"
+           .||. "course-content/*tex"
+           .||. "course-content/*typ"
            .||. "course-assignments/**/*png") $ version "copy" $ do
         route   idRoute
         compile copyFileCompiler

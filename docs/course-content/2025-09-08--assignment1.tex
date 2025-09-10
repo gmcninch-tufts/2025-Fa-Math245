@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Assignment 1}
+\author{George McNinch \\ Math 245 \\ Fall 2025, Tufts University}
+\date{Due: September 8, 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Questions}
+
+\begin{enumerate}
+
+\item Let $ F $ be a field, let $ I $ be a set, and let $ V = V_I $ be the set of finitely supported $ F $-valued functions on $ I $.
+\begin{enumerate}
+    \item Explain why $ V $ is an $ F $-vector space.
+    \item For $ i \in I $, let $ \delta_i $ be the function $ \delta_i: I \to F $ given by the rule 
+    $$\delta_i(j) =      \begin{cases}         1 & \text{if } i = j, \\         0 & \text{else.}     \end{cases}$$
+    Prove that $ \mathcal{B} = \{ \delta_i \mid i \in I \} $ is a basis for $ V_I $ as an $ F $-vector space. You need to prove that $ \mathcal{B} $ spans $ V $ and that $ \mathcal{B} $ is linearly independent.
+    \item If $ f: I \to J $ is a bijective function, prove that there is a linear mapping $ \Phi_f: V_I \to V_J $ for which $ \Phi_f(\delta_i) = \delta_{f(i)} $ for each $ i \in I $, and that $ \Phi_f $ determines an isomorphism of $ F $-vector spaces $ V_I \to V_J $.
+\end{enumerate}
+
+\item Let $ F $ be a field and let $ V $ and $ W $ be $ F $-vector spaces. Suppose that $ \phi: V \to W $ is an invertible $ F $-linear map. Using $ \phi $, define a group isomorphism $ GL(V) \to GL(W) $.
+
+\end{enumerate}
+
+\end{document}

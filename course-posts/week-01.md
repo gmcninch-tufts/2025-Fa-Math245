@@ -6,4 +6,5 @@ date    : 2025-09-03
 - [lecture notes](/course-content/grad-algebra.pdf) (p.1-5)
 
 - [problem set 1](/course-content/2025-09-08--assignment1.pdf) due Monday 2025-09-08.
-
+  [[tex-file]](/course-content/2025-09-08--assignment1.tex)
+  [[typst-file]](/course-content/2025-09-08--assignment1.typ)
