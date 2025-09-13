@@ -92,7 +92,7 @@
   Let $n in NN$ and let $D = angle.l sigma, tau angle.r$ be the dihedral group of order $2n$ as in
   Example 2.6.6 in the notes. (So the order of $sigma$ is $n$.)
 
-  + Find a 2-Sylow subgroup $P$ of $D$. (Note that your answer must take 
-    into account the parity of $n$.)
-  + Is $P$ normal in $D$?
+  + Suppose that $n = p$ is an odd prime number. Find a 2-Sylow subgroup $P$ of $D$.
+  + Suppose that $n = 2p$ where $p$ is an odd prime number. Find a 2-Sylow subgroup $P$ of $D$ in this case. 
+  + In the two cases above, decide whether or not $P$ is normal in $D$.
 ]
