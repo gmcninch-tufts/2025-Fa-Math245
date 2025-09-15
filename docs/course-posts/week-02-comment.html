@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Math245-Tufts University - Week 2 comment about generators</title>
+	<script>
+	  window.MathJax = {
+	    options: {
+	      ignoreHtmlClass: 'tex2jax_ignore',
+	      processHtmlClass: 'tex2jax_process'
+	    },
+	    tex: {
+	      autoload: {
+		color: [],
+		colorv2: ['color']
+	      },
+	      packages: {'[+]': ['noerrors']}
+	    },
+	    loader: {
+	      load: ['input/asciimath', '[tex]/noerrors']
+	    }
+	  };
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+        <link rel="stylesheet" href="../css/default.css" />
+	<link rel="stylesheet" href="../css/haddock.css" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" type="text/css" rel="stylesheet" media="screen" />
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" type="text/css" rel="stylesheet" media="screen" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" type="text/css" rel="stylesheet" media="screen" />
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" type="text/css" rel="stylesheet" media="screen" />
+	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" type="text/css" rel="stylesheet" media="screen" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />			
+    </head>
+    <body>
+        <header>
+          <div class="logo">
+            <a href="../">
+	      Math245 - Fall 2025 - Tufts Univ</a>
+          </div>
+          <nav>
+            <a href="../about.html">About</a>
+	    <a href="../course-pages/Math245--course-info.html">Info</a>	    
+            <a href="../archive.html">Archive</a>
+	    <a href="../course-content/grad-algebra.pdf">Lecture Notes</a>	    	    
+          </nav>
+        </header>
+
+        <main role="main">
+            <h1>Week 2 comment about generators</h1>
+            <article>
+    <section class="header">
+        Posted on 2025-09-08
+        
+    </section>
+    <section>
+        <p><em>Mea culpa</em> for the “generators” problem. This result is not correct:</p>
+<blockquote>
+<p>Let <span class="math inline">\(G\)</span> be a group, let <span class="math inline">\(S_1,S_2 \subseteq G\)</span> be subsets and let
+<span class="math inline">\(H_i = \langle S_i \rangle\)</span> for <span class="math inline">\(i=1,2.\)</span> Suppose that <span class="math inline">\(\forall x \in
+S_1\)</span> and <span class="math inline">\(\forall y \in S_2\)</span> we have <span class="math inline">\(x y x^{-1} \in H_2\)</span>. Prove that
+<span class="math inline">\(H_1\)</span> normalizes <span class="math inline">\(H_2\)</span>; i.e. prove that <span class="math inline">\(\forall x \in H_1, \forall y
+\in H_2, x y x^{-1} \in H_2\)</span></p>
+</blockquote>
+<p>What I should have written was something like this:</p>
+<blockquote>
+<p>Let <span class="math inline">\(G\)</span> be a group, and let <span class="math inline">\(H, K\)</span> be subgroups of <span class="math inline">\(G\)</span>. Suppose that
+<span class="math inline">\(K = \langle S \rangle\)</span> for some <span class="math inline">\(S \subseteq G\)</span>. Suppose that
+<span class="math inline">\(\forall x \in H\)</span> and <span class="math inline">\(\forall y \in S\)</span> we have <span class="math inline">\(x y x^{-1}
+\in K\)</span>. Then <span class="math inline">\(H\)</span> normalizes <span class="math inline">\(K\)</span>.</p>
+</blockquote>
+<p>For a proof, we can use the following statement:</p>
+<blockquote>
+<p><span class="math inline">\((\clubsuit)\)</span> If <span class="math inline">\(f:G \to H\)</span> is a group homomorphism and if <span class="math inline">\(S \subseteq G\)</span> is any
+subset, then <span class="math inline">\(f(\langle S \rangle) \subseteq \langle f(S) \rangle\)</span>.</p>
+</blockquote>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+	  <nav>
+	    <a href="http://www.tufts.edu">
+	      <i class="fas fa-chalkboard"></i>
+	      Tufts
+	    </a>	    
+	    <a href="http://math.tufts.edu">
+	      <i class="fas fa-chalkboard-teacher"></i>
+	      Tufts Math
+	    </a>
+	    <a href="https://gmcninch.math.tufts.edu">
+	      <i class="fas fa-coffee"></i>
+	      G McNinch
+	    </a>
+	    <a href="https://github.com/gmcninch-tufts">
+	      <i class="fab fa-github"></i>
+	      GitHub
+	    </a>	    
+	  </nav>
+        </footer>
+    </body>
+</html>
