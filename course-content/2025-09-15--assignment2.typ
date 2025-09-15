@@ -33,9 +33,11 @@
 #set enum(numbering: "a.")  
 
 #question[
-    Let $G$ be a group, let $S_1,S_2 subset.eq G$ be subsets and let $H_i = angle.l S_i angle.r$ for 
+    *Deleted* (see comments on the course web page.)
+
+    #strike[Let $G$ be a group, let $S_1,S_2 subset.eq G$ be subsets and let $H_i = angle.l S_i angle.r$ for 
     $i=1,2.$ Suppose that $forall x in S_1$ and $forall y in S_2$ we have $x y x^(-1) in H_2$. Prove that $H_1$ normalizes $H_2$; i.e. prove that
-    $ forall x in H_1, forall y in H_2, x y x^(-1) in H_2 $
+    $forall x in H_1, forall y in H_2, x y x^(-1) in H_2$]
 ]
 
 #question[
