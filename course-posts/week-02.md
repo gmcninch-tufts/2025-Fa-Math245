@@ -12,4 +12,4 @@ This week, we will discuss quotients and group actions.
   [[typst-file]](/course-content/2025-09-15--assignment2.typ)  
   - updated [2025-09-08 16:30] removed problem 1a, fixed statement of
     problem 2a where the symbol k wasn't defined.
-
+  - updated [2025-09-15] removed all of problem 1
