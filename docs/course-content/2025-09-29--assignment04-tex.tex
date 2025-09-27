@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Mat}{\operatorname{Mat}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\Inn}{\operatorname{Inn}}
+\newcommand{\Prop}{\operatorname{Prop}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\Syl}{\operatorname{Syl}}
+\newcommand{\Cl}{\operatorname{Cl}}
+
+\title{Problem Set 4}
+\author{Prof. George McNinch \\ Tufts University \\ Math 065 \\ Fall 2025}
+\date{Due: September 22, 2025}
+
+\begin{document}
+\maketitle
+
+\section*{Questions}
+
+\textbf{Question 1:} Let $G$ be a group and let $H, K \subseteq G$ be subgroups of $G$. Suppose that $H$ and $K$ are both normal in $G$, and that $H \cap K = \{1\}$. Recall that $HK$ is a subgroup of $G$. Prove that the natural map $H \times K \to HK$ given by $(h,k) \mapsto h \cdot k$ is a group isomorphism.
+
+Recall that the group structure on the Cartesian product is given for $(h,k), (h',k') \in H \times K$ by: 
+$$(h,k) \cdot (h',k') = (hh', kk'), \quad (h,k)^{-1} = (h^{-1},k^{-1}), \quad \text{and } 1_{H \times K} = (1_H,1_K);$$
+this is the \textbf{direct product} of $G$ and $H$.
+
+\vspace{5mm}
+
+\textbf{Question 2:} Let $\phi: G \to H$ be a surjective group homomorphism, and suppose that $N \subseteq H$ is a normal subgroup of $H$. Prove that 
+$$\phi^{-1}(N) = \{g \in G \mid \phi(g) \in N\}$$
+is a normal subgroup of $G$.
+
+\textit{Update:} The hypothesis that $\phi$ is surjective is not needed.
+
+\vspace{5mm}
+
+\textbf{Question 3:} Suppose that $G$ and $G'$ are groups, let $H, K$ be subgroups of $G$, and let $H', K'$ be subgroups of $G'$.
+
+Assume that:
+\begin{itemize}
+    \item $H$ normalizes $K$ and $H'$ normalizes $K'$.
+    \item $G = \langle K, H \rangle = KH$ and $G' = \langle K', H' \rangle = K'H'$.
+    \item $K \cap H = \{1\}$ and $K' \cap H' = \{1\}$.
+    \item There are group isomorphisms $\phi: H \to \tilde{H}'$ and $\psi: K \to \tilde{K}'$. Since $H$ normalizes $K$, for $h \in H$ we know that the restriction of $\Inn_h$ to $K$ determines an automorphism of $K$; similarly, for $h' \in H'$, $\Inn_{h'}$ determines an automorphism of $K'$.
+\end{itemize}
+
+We finally suppose that for $h \in H$ and $k \in K$ we have 
+$$\psi(\Inn_h k) = \Inn_{\phi(h)} \psi(k).$$
+
+Then there is a group isomorphism $\Phi: G \to G'$ given for $(k,h) \in KH = G$ by the rule 
+$$\Phi(k,h) = \psi(k) \phi(h) \in K'H' = G'.$$
+
+\textit{Update:} I really should have written that $\Phi: G \to G'$ is defined by the rule 
+\[\Phi(kh) = \psi(k) \phi(h) \
+\in K'H' = G' \text{ for } kh \in KH = G.\]
+Note that under the hypotheses, $G$ may be identified as a set with the direct product $H \times K$ - that is why I wrote $(k,h)$ for an element of $G$.
+
+\vspace{5mm}
+
+\textbf{Question 4:} For a prime number $p$, write $FF_p = \mathbb{Z}/p\mathbb{Z}$ and let 
+$$H_p = \left\{ \begin{pmatrix} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & 1 \end{pmatrix} \mid a,b,c \in FF_p \right\}$$
+so that $H_p$ is a subgroup of $\operatorname{GL}_3(FF_p)$ of order $p^3$. (You should at least think through why this is so, though you needn't submit the details).
+
+\begin{itemize}
+    \item Prove that $H_2$ is isomorphic to $D_8 = D_{2 \cdot 4}$, the dihedral group with 8 elements.
+    
+    \textit{Hint:} Find $\sigma, \tau \in H_2$ with $o(\sigma) = 4$, $o(\tau) = 2$ which have the property that $\tau \sigma \tau = \sigma^{-1}$. Then $H_2 = \langle \sigma \rangle \cdot \langle \tau \rangle$. Now use the solution to Question 3.
+    
+    \item Show that $H_p$ is a $p$-Sylow subgroup of $\operatorname{GL}_3(FF_p)$.
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Question 5:} Let $G$ be a finite group, let $p$ be a prime number, and let $P \in \operatorname{Syl}_p(G)$. Let $H = N_G(P) = \{ g \in G \mid \Inn_g P = P \}$ be the normalizer of $P$ in $G$. Prove that $N_G(H) = H$. (In words: the normalizer of a Sylow $p$-subgroup is self-normalizing).
+
+\vspace{5mm}
+
+\textbf{Question 6:} Suppose that $F$ is a field.
+\begin{itemize}
+    \item Show that the ideals of $F$ are $\{0\}$ and $F$.
+    \item Deduce that if $R$ is any commutative ring (with $0_R \neq 1_R$), then any homomorphism $\phi: F \to R$ is injective.
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Question 7:} Let $D \in \mathbb{Z}$ and suppose that $D$ is square-free - i.e., for any prime number $p$, $p^2 \nmid D$.
+
+If $D \equiv 1 \pmod{4}$ let $\omega = \frac{1 + \sqrt{D}}{2}$ and show that 
+$$\mathbb{Z}[\omega] = \{ a + b\omega \mid a,b \in \mathbb{Z} \}$$
+forms a subring of $\mathbb{C}$.
+
+\end{document}
