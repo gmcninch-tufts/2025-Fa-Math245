@@ -11,7 +11,7 @@ Sylow in problem set 4).
 
 - [lecture notes](/course-content/grad-algebra.pdf) (week 3 material begins on p. 16)
 
-- [problem set 2](/course-content/2025-09-22--assignment3.pdf) due Monday 2025-09-22.
+- [problem set 3](/course-content/2025-09-22--assignment3.pdf) due Monday 2025-09-22.
   [[tex-file]](/course-content/2025-09-22--assignment3-tex.tex)
   [[typst-file]](/course-content/2025-09-22--assignment3.typ)  
 
