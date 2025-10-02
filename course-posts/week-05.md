@@ -9,8 +9,10 @@ date    : 2025-09-29
 
 - [lecture notes](/course-content/grad-algebra.pdf) (week 5 material begins on p. 36)
 
-- [problem set 5](/course-content/2025-10-08--assignment05.pdf)
-
+- [problem set 5](/course-content/2025-10-08--assignment05.pdf)  
+  [typst](/course-content/2025-10-08--assignment05.typ)  
+  [latex](/course-content/2025-10-08--assignment05-tex.tex)
+  
 # topics
 
 This week, we'll talk about the following:
