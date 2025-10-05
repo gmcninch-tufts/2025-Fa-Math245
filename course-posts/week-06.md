@@ -1,13 +1,13 @@
 ---
-title   : Week 5
-date    : 2025-09-29
+title   : Week 6
+date    : 2025-10-06
 ---
 
 
 # materials
 
 
-- [lecture notes](/course-content/grad-algebra.pdf) (week 5 material begins on p. 36)
+- [lecture notes](/course-content/grad-algebra.pdf) (week 6 material begins on p. 46)
 
 - [problem set 6]
   
