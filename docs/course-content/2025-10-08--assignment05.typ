@@ -89,12 +89,7 @@ Let $R$ be a commutative ring (with identity...).
 ]
 
 #question[
-  Let $M,N$ be $R$-modules. 
-  Show that there is a short exact sequence
-  $ 0 -> M ->^(iota_M) M plus.circle N->^(pi_N) N-> 0 $
-  where $iota_M:M -> M plus.circle N$ and $iota_N:N -> M plus.circle M$ are the mappings defining the direct sum (coproduct) $M plus.circle N$, and $pi_M:M plus.circle N tilde.eq M times N -> M$ and  
-  $pi_N:M plus.circle N tilde.eq M times N -> N$
-  are the mappings defining the product $M times N$.
+  (question 3 removed -- will appear next week!)
 ]
 
 #question[
@@ -120,7 +115,8 @@ Let $R$ be a commutative ring (with identity...).
 
   + If $M$ is a free $R$-module on $beta:B -> M$, 
     prove that $M slash I M$ is a free $R slash I$-module on 
-    $ beta' = pi compose beta:B -> M slash I $ where $pi:M -> M slash I$ is the quotient morphism.
+    $ beta' = pi compose beta:B -> M slash I M $ where $pi:M -> M slash I M$ is the quotient morphism,
+    where $I M$ is the $R$-submodule $I M = {a x | a in I, x in M}$ of $M$.
 
 
 ]
