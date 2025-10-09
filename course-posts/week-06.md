@@ -9,7 +9,9 @@ date    : 2025-10-06
 
 - [lecture notes](/course-content/grad-algebra.pdf) (week 6 material begins on p. 46)
 
-- [problem set 6]
+- [problem set 6](/course-content/2025-10-15--assignment06.pdf) due 2025-10-15  
+  [typst](/course-content/2025-10-15--assignment06.typ)
+  [latex](/course-content/2025-10-15--assignment06-tex.tex)
   
 # topics
 
