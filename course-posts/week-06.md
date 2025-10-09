@@ -18,7 +18,6 @@ date    : 2025-10-06
 This week, we'll talk about the following:
 
 - conclusion of characterization of free modules via bases
-
 - introduction of the notion of an algebra
 - integral domains; prime and maximal ideals
 - existence of maximal ideals and Zorn's Lemma
