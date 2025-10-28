@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz}
+
+\title{Problem Set Week 9}
+\author{Tufts University \\ Fall 2025 \\ Math 065 \\ Prof. George McNinch}
+\date{Due: 2025-11-03}
+
+\newtheorem{problem}{Problem}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\Aut}{\text{Aut}}
+\newcommand{\End}{\text{End}}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\Mat}{\text{Mat}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Inn}{\text{Inn}}
+\newcommand{\Prop}{\text{Prop}}
+\newcommand{\Stab}{\text{Stab}}
+\newcommand{\Syl}{\text{Syl}}
+\newcommand{\Cl}{\text{Cl}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\mfk}[1]{\mathfrak{#1}}
+
+\begin{document}
+
+\maketitle
+
+Let $ A $ be a commutative ring (with identity).
+
+\begin{enumerate}
+  
+\item Suppose that $ A $ is an integral domain. Prove that the
+  polynomial ring $ A[T] $ is an integral domain.
+
+
+\item Let $ F $ be a field and let $ f \in F[T] $ be a polynomial of
+  degree $ \geq 1 $. An element $ \alpha \in F $ is a root of $ f $ if
+  $ f(\alpha) = 0 $. Recall that $ f(\alpha) = \varphi(f) $ is the
+  result of applying the ring homomorphism $ \varphi : F[T] \to F $
+  determined by the properties: $ \varphi_{|F} = \text{id} $ and $
+  \varphi(T) = \alpha $.
+
+    \begin{enumerate}
+        \item Prove that if $ \deg f = 2 $ or $ \deg f = 3 $, then $ f $ is irreducible if and only if $ f $ has no root in $ F $.
+        \item Prove that in general, there are reducible polynomials with no root in $ F $ provided that $ \deg f \geq 4 $.
+    \end{enumerate}
+
+
+  \item Let $ d \in \ZZ $, let $ f = T^2 - d \in \ZZ[T] $, and
+    consider the ring $ \ZZ[\sqrt{d}] \subset \CC $. Assume that $
+    \forall a \in \ZZ, d \neq a^2 $. In that case, one knows that $
+    \sqrt{d} \not\in \QQ $.
+
+    \begin{enumerate}
+        \item Explain why $ f = T^2 - d $ is irreducible in $ \QQ[T] $ and prove that $ \QQ[T]/\langle T^2 - d \rangle \cong \QQ[\sqrt{d}] $.
+        \item Explain why $ f = T^2 - d $ is irreducible in $ \ZZ[T] $ and prove that $ \ZZ[T]/\langle T^2 - d \rangle $ is a free $ \ZZ $-module of rank 2.
+        \item Prove that $ \QQ(\sqrt{d}) $ may be identified with the field of fractions of $ \ZZ[\sqrt{d}] $.
+    \end{enumerate}
+
+
+  \item Let $ A = \ZZ[i] $.  Then $ A $ is a Euclidean Domain with
+    norm given by $ N(a + bi) = a^2 + b^2 $ for $ a,b \in \ZZ $ -- you
+    are free to use this; for a reference see [Dummit-Foote,
+    \S 8.1 example 3 p. 272].
+
+    \begin{enumerate}
+        \item Show that $ N(\alpha) = \pm 1 \iff \alpha \in A^\times $.
+        \item Show for any integer $ n $ that $ A/A \cdot n $ is a ring with
+        $ n^2 $ elements.
+        \item Show that $ 7 $ is irreducible in $ A $. 
+            \textit{Hint:} Is it possible to write $ 7 = a^2 + b^2 $ for $ a,b \in \ZZ $?
+            Conclude that $ A/A \cdot 7 $ is a field with $ 49 $ elements.
+    \end{enumerate}
+
+
+  \item Again let $ A = \ZZ[i] $ and keep the notation $ N $ for the
+    norm on $ A $.
+
+    \begin{enumerate}
+        \item Show that if $ N(\alpha) $ is a prime integer, then $ \alpha $ is irreducible and hence prime.
+        \item Show that $ 2 + i $ and $ 2 - i $ are both prime in $ A $.
+        \item Prove that $ A/A \cdot (2 + i) $ and $ A/A \cdot (2 - i) $ are both fields, each with $ 5 $ elements.
+        \item Prove that 
+            $ A/A \cdot 5 \cong A/A \cdot (2 + i) \times A/A \cdot (2 - i) $.
+            (Use the Chinese Remainder Theorem.)
+    \end{enumerate}
+
+
+  \item Let $ K $ be an uncountable field (e.g., $ K = \RR $ or $ K =
+    \CC $).  Prove that $ K(T) $ contains a $ K $-linearly independent
+    subset which is uncountable.
+
+    \textit{Hint:} Consider the set $ \{ \frac{1}{T - \alpha} \mid \alpha \in K \} $.
+
+
+  \item Let $ K $ be a field, and let $ p_1,p_2,\ldots,p_r \in K[T] $
+    be pairwise non-associate irreducible polynomials for some $ r \in
+    \mathbb{N} $. Let $ S $ be a new polynomial variable and consider
+    the polynomial $ f = S^2 - p_1 \cdots p_r \in K[S,T] $.
+
+    \begin{enumerate}
+        \item Prove that if $ r > 0 $, then $ f $ is irreducible in $ K(T)[S] $.
+
+            \textit{Hint:} Argue that $ f $ has no root in $ K(T) $ just as in the classical proof that $ \sqrt{2} $ is irrational.
+        \item Explain how to deduce that $ f $ is irreducible -- and hence prime -- in $ K[T,S] $.
+        \item Let $ A = K[T,S]/\langle f \rangle $ and write $ s $ for the image of $ S $ in $ A $. Prove that the integral domain $ A $ is a free $ K[T] $-module on a basis $ \{1,s\} $.
+        \item Prove that $ K(T)[S]/\langle f \rangle $ may be identified with the field of fractions of $ K[S,T]/\langle f \rangle $.
+    \end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}

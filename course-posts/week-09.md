@@ -16,3 +16,7 @@ date    : 2025-10-27
 - I'll post the problems set due Wednesday Nov 5 soon.
 
 
+- [problem set 9](/course-content/2025-11-03--assignment09.pdf) due 2025-11-03  
+  [typst](/course-content/2025-11-03--assignment09.typ)  
+  [latex](/course-content/2025-11-03--assignment09-tex.tex)
+
