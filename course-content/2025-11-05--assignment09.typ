@@ -15,7 +15,7 @@
     semester: "Fall 2025",
     seminar: "Math 065",
     faculty: "Prof. George McNinch",
-    date: [due: 2025-11-03] 
+    date: [due: 2025-11-05] 
 )
 
 #set enum(numbering: "a.")  
