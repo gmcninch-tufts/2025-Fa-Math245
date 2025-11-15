@@ -11,5 +11,6 @@ date    : 2025-11-10
 
 - [lecture notes](/course-content/grad-algebra.pdf) (week 11 material begins on p. 92. Though we aren't quite done with the week 10 material.)
 
-- [problem set week 11](/course-content/2025-11-19--assignment11.pdf) 
-
+- [problem set week 11](/course-content/2025-11-19--assignment11.pdf)   
+  [typst](/course-content/2025-11-19--assignment11.typ)  
+  [latex](/course-content/2025-11-19--assignment11.tex)

@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+\title{Problem Set Week 13}
+\author{Tufts University \\ Math 065 \\ Prof. George McNinch}
+\date{Due: November 19, 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item Let $ A $ be a local ring with unique maximal ideal $ \mathfrak{m} $,
+    and write $ k = A / \mathfrak{m} $ for the residue field of $ A $.
+
+    Suppose that $ M $ is a free $ A $-module of finite rank $ n $. Let
+    $ \alpha_1,\ldots,\alpha_n \in M / \mathfrak{m} M $ be a $ k = A / \mathfrak{m} $-basis for
+    $ M / \mathfrak{m} M $, and let $ x_1,\ldots,x_n \in M $ be elements for which
+    $ \alpha_i = x_i + \mathfrak{m} M $ for $ i = 1, \ldots, n $. Prove that $ x_1,\ldots,x_n $
+    forms an $ A $-basis for $ M $.
+
+    \item Let $ A $ be a commutative ring and $ P \subset A $ a prime ideal.
+    Denote by $ A_P $ the \textit{localization} of $ A $ at $ P $; thus $ A_P $ is a local
+    ring with unique maximal ideal $ \mathfrak{m} = P^e = P \cdot A_P $.
+
+    \begin{enumerate}[(a)]
+        \item Prove that $ A_P / P \cdot A_P $ is isomorphic to the field of
+              fractions of the integral domain $ A / P $.
+
+        \item If $ P $ is a maximal ideal of $ A $, conclude that the fields $ A / P $ and
+              $ A_P / P \cdot A_P $ are isomorphic.
+    \end{enumerate}
+
+    \item Let $ A $ be a PID, $ n \in \mathbb{N} $, let $ F $ be a free $ A $-module of finite rank
+    and let $ \Phi \in \text{End}_A(F) $ be an $ A $-linear endomorphism.
+
+    For a prime $ p \in A $, write $ A_{(p A)} $ for the localization of $ A $ at $ p A $.
+    Note that $ \Phi $ determines an $ A_{(p A)} $-homomorphism
+    $ \text{id} \otimes \Phi: A_{(p A)} \otimes_A F \to A_{(p A)} \otimes_A F $.
+    
+    \begin{enumerate}[(a)]
+        \item Fix an $ A $-basis $ \mathcal{B} $ for $ F $. For $ v \in F $, we write
+              $ v = \sum_{b \in \mathcal{B}} \alpha_b b $ for a function $ \alpha: \mathcal{B} \to A $
+              and we write $ [v]_{\mathcal{B}} = \alpha \in A^{\mathcal{B}} $, where $ A^{\mathcal{B}} $ is the module of 
+              all functions $ \mathcal{B} \to A $ (recall that $ |\mathcal{B}| = n < \infty $).
+
+              Thus $ v \mapsto [v]_{\mathcal{B}}: F \to A^{\mathcal{B}} $ is an isomorphism of
+              $ A $-modules where $ A^{\mathcal{B}} $ is the module of all functions.
+
+              Show that there is a matrix $ M \in \text{Mat}_{\mathcal{B} \times \mathcal{B}}(A) $ for
+              which $ [\Phi v]_{\mathcal{B}} = M \cdot [v]_{\mathcal{B}} $ for $ v \in F $.
+        
+
+      \item Let $ d = \det(\Phi) $. Prove that $ \text{id} \otimes \Phi $ is an
+              isomorphism — i.e., is an \textit{automorphism} of $ A_{(p A)} \otimes_A F $ — if and only if $ \gcd(d,p) = 1 $.
+        
+              In particular, if $ d \neq 0 $, then $ \text{id} \otimes \Phi $ is an
+              automorphism for all but finitely many primes $ p \in A $.
+
+    \end{enumerate}
+
+    \item Let $ A $ be a commutative ring and let $ M,N,P $ be $ A $-modules.
+    Prove that there is an isomorphism
+    $$M \otimes_A (N \oplus P) \cong (M \otimes_A N) \oplus (M \otimes_A P).$$
+
+    \item Let $ A $ be a PID and let $ p, q \in A $. Write $ d = \gcd(p,q) \in A $ for a greatest common divisor.
+
+    Prove that:
+    $$(A / p A) \otimes_A (A / q) \cong A / d A.$$
+
+    \item Let $ F $ be a field and let $ V,W $ be finite-dimensional
+    vector spaces over $ F $.
+
+    \begin{enumerate}[(a)]
+        \item Recall that the dual space $ V^* $ is the vector space $ \text{Hom}_F(V,F) $.
+
+        Show that $ \dim_F V = \dim_F V^* $. *Hint:* exhibit a basis for $ V^* $.
+
+        \item Show that there is an isomorphism
+              $$V^* \otimes_F W \cong \text{Hom}_F(V,W).$$
+
+              *Hint:* Use the mapping property of $ \otimes $ to define the indicated map.
+              Basis considerations show that this map is surjective. Now compare
+              the dimensions of the domain and co-domain.
+    \end{enumerate}
+
+    \item Let $ A $ be a commutative ring. Let $ M, M', N, N' $ be $ A $-modules
+    and let $ \phi:M \to N $ and $ \phi':M' \to N' $ be $ A $-module homomorphisms. 
+    There is a unique homomorphism of $ A $-modules
+    $$\phi \otimes \phi': M \otimes_A N \to M' \otimes_A N'$$
+    such that
+    $$(\phi \otimes \phi')(m \otimes n) = \phi(m) \otimes \phi'(n).$$
+
+    \item Let $ F $ be a field and let $ \phi: V \to W $ be a homomorphism of $ F $-vector spaces (a
+    "linear transformation") and let $ X $ be an $ F $-vector space.
+
+    If $ \phi $ is injective, prove that $ \text{id}_X \otimes \phi: X \otimes_F V \to X \otimes_F W $ is injective.
+
+    \textbf{Remark}: This shows that the functor $ X \otimes_F - $ is \textit{exact} for
+    a field $ F $; indeed, combine the preceding observation with the
+    result proved in class that the functor $ Y \otimes_A - $ is always
+    right exact. In general, an $ A $-module $ Y $ is said to be \textit{flat} if $ Y \otimes_A - $ is exact.
+    
+    \item Let $ A $ be a commutative ring and let $ M $ be an $ A $-module.
+    If $ F $ is a free $ A $-module on $ \beta: \mathcal{B} \to F $, prove
+    that $ F \otimes_A M $ is isomorphic to $ \bigoplus_{b \in \mathcal{B}} M $, a direct sum of
+    copies of $ M $ indexed by $ \mathcal{B} $.
+
+\end{enumerate}
+
+\end{document}              
