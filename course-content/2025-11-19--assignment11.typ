@@ -62,8 +62,8 @@
   be a short exact sequence of $A$-modules.
 
   Prove that for an $A$-module $W$, the sequence
-  $ (suit.club) #h(3mm) 0 -> Hom_A (W,X) ->^(f |-> f compose iota) Hom_A (W,Y) 
-  ->^(g |-> g compose pi) Hom_A (W,Z) $
+  $ (suit.club) #h(3mm) 0 -> Hom_A (W,X) ->^(f |-> iota compose f) Hom_A (W,Y) 
+  ->^(g |-> pi compose g) Hom_A (W,Z) $
   is _exact_.
 
   NB. A sequence of $A$-modules and $A$-module homomorphisms is _exact_ if
