@@ -13,7 +13,7 @@
     title: "Problem Set 6",
     university: "Tufts University",
     semester: "Fall 2025",
-    seminar: "Math 065",
+    seminar: "Math 245",
     faculty: "Prof. George McNinch",
     date: [due: 2025-10-15] 
 )

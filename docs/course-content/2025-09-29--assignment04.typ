@@ -11,9 +11,9 @@
     title: "Problem Set 4",
     university: "Tufts University",
     semester: "Fall 2025",
-    seminar: "Math 065",
+    seminar: "Math 245",
     faculty: "Prof. George McNinch",
-    date: [due: 2025-09-22] 
+    date: [due: 2025-10-01] 
 )
 
 #set enum(numbering: "a.")  
@@ -115,8 +115,11 @@
 #question[
   Suppose that $F$ is a field.
   + Show that the ideals of $F$ are ${0}$ and $F$.
-  + Deduce that if $R$ is any commutative ring (with $0_R eq.not 1_R$), then 
-    any homomorphism $ phi:F -> R $ is injective.
+  + Deduce that if $R$ is any commutative ring (with $0_R eq.not 1_R$), 
+    then  any homomorphism $ phi:F -> R $ is injective.
+  
+  *Note*: We insist that a ring homomorphism $f:R_1 -> R_2$ preserve the identity elements:
+  $f(1_R_1) = 1_R_2.$ 
 ]
 
 #question[
