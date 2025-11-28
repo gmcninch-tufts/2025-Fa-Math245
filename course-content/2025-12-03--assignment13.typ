@@ -98,7 +98,7 @@
 #problem[
     Let $A$ be a commutative ring and let $M,N,P$ be $A$-modules.
     Prove that there is an isomorphism
-    $ M tensor_A (N plus.o P) tilde.eq (M tensor_A N) plus.o (N tensor_A P). $
+    $ M tensor_A (N plus.o P) tilde.eq (M tensor_A N) plus.o (M tensor_A P). $
 ]
 
 #problem[ Let $A$ be a PID and let $p,q in A$. Write $d = gcd(p,q) in
